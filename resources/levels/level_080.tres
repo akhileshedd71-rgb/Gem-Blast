@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/core/level_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+number = 80
+title = "Island finale"
+world = 3
+difficulty = "Crown"
+seed_value = 8380097
+colors = 5
+moves = 26
+score_goal = 2588
+collect_color = 3
+collect_goal = 22
+ice_cells = PackedInt32Array()
+stone_cells = PackedInt32Array(10, 13, 26, 29)
+void_cells = PackedInt32Array()
+tip = "A crown challenge! Combine two special gems for a powerful blast."

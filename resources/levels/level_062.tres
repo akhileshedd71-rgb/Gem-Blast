@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/core/level_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+number = 62
+title = "Little treasures"
+world = 3
+difficulty = "Sweet"
+seed_value = 6494975
+colors = 5
+moves = 29
+score_goal = 0
+collect_color = 0
+collect_goal = 18
+ice_cells = PackedInt32Array()
+stone_cells = PackedInt32Array(26, 29, 34, 37)
+void_cells = PackedInt32Array(0, 7, 56, 63)
+tip = "Match next to stones to break them. New gems will fill the cleared spaces."

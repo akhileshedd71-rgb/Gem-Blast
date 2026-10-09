@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/core/level_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+number = 55
+title = "Brilliant bloom"
+world = 2
+difficulty = "Sweet"
+seed_value = 5761872
+colors = 5
+moves = 30
+score_goal = 1888
+collect_color = -1
+collect_goal = 0
+ice_cells = PackedInt32Array(10, 12, 14, 17, 19, 21, 23, 24)
+stone_cells = PackedInt32Array(26, 29, 34, 37)
+void_cells = PackedInt32Array()
+tip = "Match next to stones to break them. New gems will fill the cleared spaces."

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/core/level_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+number = 98
+title = "Crystal chorus"
+world = 4
+difficulty = "Tricky"
+seed_value = 10265219
+colors = 6
+moves = 29
+score_goal = 0
+collect_color = 0
+collect_goal = 20
+ice_cells = PackedInt32Array(9, 11, 13, 15, 16, 18, 20, 25, 27, 29)
+stone_cells = PackedInt32Array(17, 22, 41, 46)
+void_cells = PackedInt32Array(0, 7, 56, 63)
+tip = "Match next to stones to break them. New gems will fill the cleared spaces."

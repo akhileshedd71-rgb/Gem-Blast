@@ -1,0 +1,59 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/art/star.svg" id="1"]
+[ext_resource type="Texture2D" path="res://assets/art/star.svg" id="2"]
+[ext_resource type="Texture2D" path="res://assets/art/star.svg" id="3"]
+
+[ext_resource type="Theme" path="res://resources/themes/game_theme.tres" id="4"]
+
+[node name="LevelNode" type="Control"]
+theme = ExtResource("4")
+layout_mode = 1
+anchors_preset = 0
+
+
+[node name="Button" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 80.0
+offset_bottom = 76.0
+text = "1"
+theme_type_variation = &"BlueButton"
+
+theme_override_font_sizes/font_size = 30
+
+[node name="Star0" type="TextureRect" parent="."]
+unique_name_in_owner = true
+offset_left = 7.0
+offset_top = 69.0
+offset_right = 29.0
+offset_bottom = 91.0
+texture = ExtResource("1")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+
+[node name="Star1" type="TextureRect" parent="."]
+unique_name_in_owner = true
+offset_left = 30.0
+offset_top = 69.0
+offset_right = 52.0
+offset_bottom = 91.0
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+
+[node name="Star2" type="TextureRect" parent="."]
+unique_name_in_owner = true
+offset_left = 53.0
+offset_top = 69.0
+offset_right = 75.0
+offset_bottom = 91.0
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2

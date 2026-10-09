@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/core/level_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+number = 84
+title = "Crystal wishes"
+world = 4
+difficulty = "Sweet"
+seed_value = 8799013
+colors = 6
+moves = 29
+score_goal = 0
+collect_color = -1
+collect_goal = 0
+ice_cells = PackedInt32Array(9, 11, 13, 15, 16, 18, 20, 22, 25, 27)
+stone_cells = PackedInt32Array()
+void_cells = PackedInt32Array()
+tip = "Match gems over frosty tiles to melt the ice. Every frosty tile counts!"

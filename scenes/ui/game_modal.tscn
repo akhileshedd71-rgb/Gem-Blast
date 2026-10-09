@@ -1,0 +1,94 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/game_modal.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/art/star.svg" id="2"]
+
+[ext_resource type="Theme" path="res://resources/themes/game_theme.tres" id="3"]
+
+[node name="GameModal" type="Control"]
+theme = ExtResource("3")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+visible = false
+
+[node name="Shade" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.06, 0.12, 0.28, 0.8)
+
+
+[node name="Window" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+offset_left = 55.0
+offset_top = 264.0
+offset_right = 665.0
+offset_bottom = 1002.0
+
+
+[node name="Emblem" type="TextureRect" parent="."]
+unique_name_in_owner = true
+offset_left = 294.0
+offset_top = 294.0
+offset_right = 426.0
+offset_bottom = 426.0
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+
+[node name="Title" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 79.0
+offset_top = 450.0
+offset_right = 641.0
+offset_bottom = 522.0
+text = "Sparkle time!"
+theme_override_font_sizes/font_size = 44
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.4745, 0.2824, 0.6471, 1)
+
+
+[node name="Body" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 94.0
+offset_top = 535.0
+offset_right = 626.0
+offset_bottom = 732.0
+text = ""
+theme_override_font_sizes/font_size = 25
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+
+autowrap_mode = 2
+
+[node name="Primary" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 108.0
+offset_top = 766.0
+offset_right = 612.0
+offset_bottom = 854.0
+text = "Let’s play!"
+
+
+[node name="Secondary" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 108.0
+offset_top = 875.0
+offset_right = 612.0
+offset_bottom = 948.0
+text = "Back to map"
+theme_type_variation = &"BlueButton"

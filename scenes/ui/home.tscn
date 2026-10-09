@@ -1,0 +1,199 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/home.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/art/prism_isles.png" id="2"]
+[ext_resource type="Texture2D" path="res://assets/art/settings.svg" id="3"]
+[ext_resource type="Texture2D" path="res://assets/art/map.svg" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/shop.svg" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/wardrobe.svg" id="6"]
+
+[ext_resource type="Theme" path="res://resources/themes/game_theme.tres" id="7"]
+
+[node name="Home" type="Control"]
+theme = ExtResource("7")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
+
+
+[node name="Hero" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2")
+expand_mode = 1
+stretch_mode = 6
+mouse_filter = 2
+
+
+[node name="Daily" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 32.0
+offset_top = 32.0
+offset_right = 227.0
+offset_bottom = 92.0
+text = "Daily gift"
+theme_type_variation = &"NavButton"
+
+
+[node name="Settings" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 626.0
+offset_top = 32.0
+offset_right = 688.0
+offset_bottom = 92.0
+text = ""
+theme_type_variation = &"NavButton"
+
+
+[node name="SettingsIcon" type="TextureRect" parent="."]
+unique_name_in_owner = true
+offset_left = 633.0
+offset_top = 39.0
+offset_right = 681.0
+offset_bottom = 85.0
+texture = ExtResource("3")
+expand_mode = 1
+stretch_mode = 5
+mouse_filter = 2
+
+
+[node name="Eyebrow" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 45.0
+offset_top = 106.0
+offset_right = 675.0
+offset_bottom = 142.0
+text = "A  P R I S M  I S L E S  A D V E N T U R E"
+theme_override_font_sizes/font_size = 20
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.1569, 0.4039, 0.4941, 1)
+
+
+[node name="GemTitle" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 30.0
+offset_top = 144.0
+offset_right = 690.0
+offset_bottom = 258.0
+text = "GEM"
+theme_override_font_sizes/font_size = 109
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1)
+
+theme_override_colors/font_outline_color = Color(0.36, 0.21, 0.61, 1)
+theme_override_constants/outline_size = 16
+theme_override_colors/font_shadow_color = Color(0.22, 0.14, 0.43, 0.4)
+theme_override_constants/shadow_offset_y = 8
+
+[node name="BlastTitle" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 25.0
+offset_top = 245.0
+offset_right = 695.0
+offset_bottom = 375.0
+text = "BLAST"
+theme_override_font_sizes/font_size = 113
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+theme_override_colors/font_color = Color(1.0, 0.898, 0.5451, 1)
+
+theme_override_colors/font_outline_color = Color(0.36, 0.21, 0.61, 1)
+theme_override_constants/outline_size = 16
+theme_override_colors/font_shadow_color = Color(0.22, 0.14, 0.43, 0.4)
+theme_override_constants/shadow_offset_y = 9
+
+[node name="Welcome" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 40.0
+offset_top = 900.0
+offset_right = 680.0
+offset_bottom = 946.0
+text = "Meet Pip. Find your sparkle."
+theme_override_font_sizes/font_size = 29
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+theme_override_colors/font_color = Color(1.0, 1.0, 1.0, 1)
+
+theme_override_colors/font_outline_color = Color(0.12, 0.4, 0.52, 1)
+theme_override_constants/outline_size = 5
+
+[node name="Play" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 115.0
+offset_top = 968.0
+offset_right = 605.0
+offset_bottom = 1062.0
+text = "PLAY  •  LEVEL 1"
+
+theme_override_font_sizes/font_size = 38
+
+[node name="ProgressLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 40.0
+offset_top = 1078.0
+offset_right = 680.0
+offset_bottom = 1118.0
+text = "200 levels of jewel-filled joy"
+theme_override_font_sizes/font_size = 23
+horizontal_alignment = 1
+vertical_alignment = 1
+mouse_filter = 2
+theme_override_colors/font_color = Color(0.1294, 0.3137, 0.4235, 1)
+
+
+[node name="Map" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 34.0
+offset_top = 1138.0
+offset_right = 242.0
+offset_bottom = 1238.0
+text = "Adventure"
+theme_type_variation = &"NavButton"
+
+theme_override_font_sizes/font_size = 23
+theme_override_constants/icon_max_width = 44
+icon = ExtResource("4")
+expand_icon = true
+
+[node name="Shop" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 256.0
+offset_top = 1138.0
+offset_right = 464.0
+offset_bottom = 1238.0
+text = "Shop"
+theme_type_variation = &"NavButton"
+
+theme_override_font_sizes/font_size = 23
+theme_override_constants/icon_max_width = 44
+icon = ExtResource("5")
+expand_icon = true
+
+[node name="Wardrobe" type="Button" parent="."]
+unique_name_in_owner = true
+offset_left = 478.0
+offset_top = 1138.0
+offset_right = 686.0
+offset_bottom = 1238.0
+text = "My style"
+theme_type_variation = &"NavButton"
+
+theme_override_font_sizes/font_size = 23
+theme_override_constants/icon_max_width = 44
+icon = ExtResource("6")
+expand_icon = true

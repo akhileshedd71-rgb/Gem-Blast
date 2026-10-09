@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/core/level_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+number = 5
+title = "A bright idea"
+world = 0
+difficulty = "Sweet"
+seed_value = 525422
+colors = 5
+moves = 30
+score_goal = 1288
+collect_color = 0
+collect_goal = 12
+ice_cells = PackedInt32Array()
+stone_cells = PackedInt32Array()
+void_cells = PackedInt32Array()
+tip = "Match 3 gems to collect them. Reach every goal before your moves run out."

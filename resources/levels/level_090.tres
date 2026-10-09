@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="LevelData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/core/level_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+number = 90
+title = "Crown jewel"
+world = 4
+difficulty = "Crown"
+seed_value = 9427387
+colors = 6
+moves = 26
+score_goal = 2558
+collect_color = -1
+collect_goal = 0
+ice_cells = PackedInt32Array(9, 11, 13, 15, 16, 18, 20, 22, 25, 27, 29, 31, 32, 34)
+stone_cells = PackedInt32Array()
+void_cells = PackedInt32Array(0, 7, 56, 63)
+tip = "A crown challenge! Combine two special gems for a powerful blast."
